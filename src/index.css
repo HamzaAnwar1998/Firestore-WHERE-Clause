@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+form{
+  width:600px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.fetch-btn{
+  width: 100%;
+}
+
+/* products css */
+.products-box{
+  margin-top:30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product{
+  width: 350px;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-right: 24px;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  border-radius: 10px; 
+}
+
+.product:hover {
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 768px){
+  .product{
+    width: 300px;
+  }
+}
+
+.product .product-img{
+  width: 180px;
+  height: 215px;  
+}
+
+.product .product-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.product .product-text{
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;  
+}
+
+.product .product-text.title{
+  color: #e00a02;  
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product .product-text.description{
+  height: 50px;
+  overflow: hidden;
+}
+
+.product .product-text.price{
+  font-weight: 600;
+}
+
+.msg-box{
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.student{
+  border-radius: 12px;
+  border: 1px solid goldenrod;
+  padding: 20px;
+  margin-right: 24px;
 }
