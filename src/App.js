@@ -5,7 +5,7 @@ function App() {
     <div className="wrapper container">
       <br></br>
       <h1 className='text-center'>Firestore WHERE Clause</h1>
-      <h6 className='text-center'>is used to limit data. It means to request a limited amount of data that you need</h6>
+      <h6 className='text-center'>is used to limit data. It means to request a limited amount of data that you need for a given moment</h6>
       <br></br>
       <Form/>
     </div>

@@ -261,7 +261,7 @@ export const Form = () => {
 
             {myCollection===''&&(
                 <div className='msg-box'>
-                    Fetch your products to be displayed here
+                    Fetch your collection to be displayed here
                 </div>
             )}
 
